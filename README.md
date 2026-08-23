@@ -1,9 +1,9 @@
 <div align="center">
 
 # 📺 Remodaz
-### DIY Touchscreen Universal IR Remote + Protocol Analyzer
+### Universal IR Remote + Protocol Analyzer 
 
-**Built around the ESP32-WROOM-32U · Version 1.0.0**
+**Built around the ESP32-WROOM-32U · Version 1.1.3**
 
 <p>
   <img src="https://img.shields.io/badge/MCU-ESP32--WROOM--32U-blue?style=for-the-badge&logo=espressif" alt="ESP32">
@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/01d12ce1-19a3-468a-ab67-a8e50f781e69
 
 </div>
 
-> 🛠️ **DIY hardware project** — built by wiring an **ESP32-WROOM-32U** to a 2.4" ILI9341 touchscreen display, an XPT2046 touch panel, a microSD card, and an IR receiver/transmitter. 
+> 🛠️ **Project** — built by wiring an **ESP32-WROOM-32U** to a 2.4" ILI9341 (240 × 320 pixels) touchscreen display, an XPT2046 touch panel, a microSD card, and an IR receiver/transmitter. 
 
 
 ## At a Glance
@@ -206,15 +206,20 @@ Standalone tool, separate from the device database — **Devices → ANALYZ**. *
 ### Protocol Support
 
 | Protocol | Identify | Decode |
-|---|:---:|:---:|
-| NEC | ✅ | ✅ |
-| Samsung | ✅ | ✅ |
-| JVC | ✅ | ✅ |
-| Sony SIRC | ✅ | ✅ |
-| RC5 | ✅ | ❌ |
-| RC6 | ✅ | ❌ |
-| Panasonic/Kaseikyo | ✅ | ❌ |
+| ------------------ | -------- | ------ |
+| NEC                | ✅        | ✅      |
+| Samsung            | ✅        | ✅      |
+| JVC                | ✅        | ✅      |
+| Sony SIRC          | ✅        | ✅      |
+| RC5                | ✅        | ✅      |
+| RC6                | ✅        | ✅      |
+| Panasonic/Kaseikyo | ✅        | ✅      |
+| LG                 | ✅        | ✅      |
+| Denon              | ✅        | ✅      |
+| Sharp              | ✅        | ✅      |
 
+- checksums — including Manchester-coded RC5/RC6
+- A signal that doesn't match any named protocol gets a raw Addr/Cmd readout via a generic fallback.
 
 ---
 
@@ -262,7 +267,7 @@ A missing/corrupt order file only affects display order — the firmware falls b
 
 ## Project Phase & Credits
 
-**V1.0.0 :** SD-backed device/key database, IR learning with test-before-save, hold/repeat replay, IR Analyzer with protocol ID + decode, touch calibration, display settings. Later Versions are planned for AC remote support.
+**V1.1.3 :** SD-backed device/key database, IR learning with test-before-save, hold/repeat replay, IR Analyzer with protocol ID + decode, touch calibration, display settings. Later Versions are planned for AC remote support.
 
 Thanks to **mAi Digitech** for support building the hardware.
 
