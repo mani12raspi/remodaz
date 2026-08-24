@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📺 Remodaz
-### Universal IR Remote + Protocol Analyzer 
+### Universal IR Remote With Protocol Analyzer 
 
 **Built around the ESP32-WROOM-32U · Version 1.1.3**
 
@@ -13,8 +13,7 @@
   <img src="https://img.shields.io/badge/Storage-MicroSD-green?style=for-the-badge" alt="MicroSD">
 </p>
 
-https://github.com/user-attachments/assets/01d12ce1-19a3-468a-ab67-a8e50f781e69
-
+https://github.com/user-attachments/assets/70a5cfad-99ed-4770-919f-dcee578f571b
 </div>
 
 > 🛠️ **Project** — built by wiring an **ESP32-WROOM-32U** to a 2.4" ILI9341 (240 × 320 pixels) touchscreen display, an XPT2046 touch panel, a microSD card, and an IR receiver/transmitter. 
