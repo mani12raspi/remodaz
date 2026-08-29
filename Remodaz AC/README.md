@@ -1,7 +1,7 @@
 
 ## 🌡️❄️🌬️ Remodaz AC
 
-**Built with ESP32-WROOM-32U · Firmware build `V1.6.4`**
+**Built with ESP32-WROOM-32U · Firmware build `V1.6.5`**
 
 > 🛠️ **DIY hardware project** — a companion firmware to [Remodaz](https://github.com/mani12raspi/remodaz), built for the same ESP32-WROOM-32U + 2.4" ILI9341 + XPT2046 hardware, but dedicated entirely to **air conditioner** remotes instead of generic IR devices. It replaces raw-timing IR learning with [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266)'s `IRac` protocol engine, so instead of "learning" a button it *speaks* the AC's native protocol directly — full state control (power, temp, mode, fan, swing, and more) from a library of 77 built-in AC protocol entries, with no original remote required.
 
@@ -121,7 +121,7 @@ Which buttons appear for each protocol (temp control is universal; swing, turbo,
 
 ## Version 
 
-**Build `V1.6.4`** — Auto Detect (protocol + state decode), 77-entry AC protocol library, full stateful control (power/temp/mode/fan/swing/turbo/quiet/eco/light/filter/clean/beep) gated per-protocol capability, reorderable key layout, touch calibration, display settings.
+**Build `V1.6.5`** — Auto Detect (protocol + state decode), 77-entry AC protocol library, full stateful control (power/temp/mode/fan/swing/turbo/quiet/eco/light/filter/clean/beep) gated per-protocol capability, reorderable key layout, touch calibration, display settings.
 
 Companion firmware to [Remodaz](https://github.com/mani12raspi/remodaz) (universal IR remote + protocol analyzer) — same hardware platform, dedicated to AC control.
 
